@@ -15,12 +15,12 @@ const Content = Styled.div`
 `
 
 const HeadLine = Styled.h1`
+    font-size: 300%;
     font-weight: 600;
     text-align: center;
 `
 
-const Description = Styled.p`
-    font-weight: 400;
+const Description = Styled.h2`
     line-height: 1.5;
     text-align: center;
 `

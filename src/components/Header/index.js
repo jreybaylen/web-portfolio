@@ -7,16 +7,16 @@ function Header () {
         <Navbar>
             <NavList>
                 <NavListItem>
-                    <NavLink href="#">About</NavLink>
+                    <NavLink href="#section-about">About</NavLink>
                 </NavListItem>
                 <NavListItem>
-                    <NavLink href="#">Project</NavLink>
+                    <NavLink href="#section-project">Project</NavLink>
                 </NavListItem>
                 <NavListItem>
-                    <NavLink href="#">Experience</NavLink>
+                    <NavLink href="#section-experience">Experience</NavLink>
                 </NavListItem>
                 <NavListItem>
-                    <NavLink href="#">Contact</NavLink>
+                    <NavLink href="#section-contact">Contact</NavLink>
                 </NavListItem>
             </NavList>
         </Navbar>
