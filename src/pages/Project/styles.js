@@ -2,7 +2,6 @@ import Styled from 'styled-components'
 
 const Container = Styled.section`
     ${ ({ theme }) => theme.container };
-    margin-top: ${ ({ theme }) => theme.spacing * 3 }px;
 `
 
 const ContainerItemContainer = Styled.ul`
@@ -19,12 +18,18 @@ const ContainerItem = Styled.li`
     border-radius: 5px;
     margin: ${ ({ theme }) => theme.spacing }px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    transition: ${ ({ theme }) => theme.transition };
+
+    @media only screen and (max-width: 600px) {
+        flex: 1 0 89%;
+    }
 
     &:hover {
         box-shadow: 0px 20px 80px 0px rgba(18, 43, 80, 0.2);
 
         img {
             opacity: 0.8;
+            box-shadow: none;
         }
     }
 `
@@ -32,6 +37,7 @@ const ContainerItem = Styled.li`
 const ContainerItemGallery = Styled.img`
     width: 100%;
     display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 `
 
 const ContainerItemContent = Styled.div`

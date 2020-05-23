@@ -1,0 +1,37 @@
+.bounce-infinite {
+	width: 60px;
+	bottom: 30px;
+	height: 60px;
+	margin: auto;
+	border-radius:50%;
+	-ms-border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+}
+ 
+@-webkit-keyframes bounce {
+	40% { -webkit-transform: translateY(-30px); }
+	60% { -webkit-transform: translateY(-15px); }
+	0%, 20%, 50%, 80%, 100% { -webkit-transform: translateY(0); }	
+}
+ 
+@-moz-keyframes bounce {
+	40% { -moz-transform: translateY(-30px); }
+	60% { -moz-transform: translateY(-15px); }
+	0%, 20%, 50%, 80%, 100% { -moz-transform: translateY(0); }
+}
+ 
+@-o-keyframes bounce {
+	40% { -o-transform: translateY(-30px); }
+	60% { -o-transform: translateY(-15px); }
+	0%, 20%, 50%, 80%, 100% { -o-transform: translateY(0); }
+}
+@keyframes bounce {
+	40% { transform: translateY(-30px); }
+	60% { transform: translateY(-15px); }
+	0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+}

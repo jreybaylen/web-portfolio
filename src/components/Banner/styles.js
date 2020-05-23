@@ -5,9 +5,13 @@ import { SVGIcon } from '../../shared/Icons'
 const Container = Styled.div`
     ${ ({ theme }) => theme.container };
     display: flex;
-    margin-top: 8%;
     align-items: center;
     flex-direction: column;
+    margin-top: ${ ({ theme }) => theme.spacing * 5 }px;
+
+    @media only screen and (max-width: 600px) {
+        margin-top: ${ ({ theme }) => theme.spacing * 2 }px;
+    }
 `
 
 const Content = Styled.div`
@@ -28,10 +32,13 @@ const Description = Styled.h2`
 const ModifiedSVGIcon = Styled(SVGIcon)`
     opacity: 0.7;
     cursor: pointer;
+    transition: ${ ({ theme }) => theme.transition };
 
     &:hover {
         opacity: 1;
     }
 `
 
-export { Container, Content, HeadLine, Description, ModifiedSVGIcon }
+const BannerLink = Styled.a``
+
+export { Container, Content, HeadLine, Description, ModifiedSVGIcon, BannerLink }

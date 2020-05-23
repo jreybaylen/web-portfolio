@@ -1,11 +1,11 @@
 import React from 'react'
 
 import { SVGIcon } from '../../shared/Icons'
-import { Container, Content, HeadLine, Description, ModifiedSVGIcon } from './styles'
+import { Container, Content, HeadLine, Description, BannerLink, ModifiedSVGIcon } from './styles'
 
 function Banner () {
     const bannerElement = (
-        <Container>
+        <Container id="section-banner">
             <Content>
                 <HeadLine>Hi, I'm John Rey</HeadLine>
                 <Description>Software Engineer, Front End and Mobile App Developer</Description>
@@ -13,7 +13,9 @@ function Banner () {
             <Content distanceMultiplier={ 5 }>
                 <SVGIcon name="profile" width="200" height="200" />
             </Content>
-            <ModifiedSVGIcon name="mouse" width="50" height="50" />
+            <BannerLink href="#section-project">
+                <ModifiedSVGIcon className="bounce-infinite" name="mouse" width="50" height="50" />
+            </BannerLink>
         </Container>
     )
 

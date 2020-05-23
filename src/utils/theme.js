@@ -6,7 +6,8 @@ const theme = {
         maxWidth: 1200,
         margin: 'auto',
         padding: `0 ${ spacing }px`
-    }
+    },
+    transition: '0.3s'
 }
 
 export { theme }

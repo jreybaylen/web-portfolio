@@ -6,6 +6,7 @@ import { Portfolio } from './App'
 import { theme } from './utils/theme'
 import * as serviceWorker from './serviceWorker'
 
+import './assets/styles/add-on.css'
 import './assets/styles/normalize.css'
 
 ReactDOM.render(

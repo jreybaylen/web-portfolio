@@ -1,66 +1,76 @@
+import phrsSrc from '../../assets/images/projects/phrs-sc.png'
+import jamiSrc from '../../assets/images/projects/jami-sc.png'
+import shpingSrc from '../../assets/images/projects/shping-sc.png'
+import yellowSrc from '../../assets/images/projects/yellow-sc.png'
+import sktIOSSrc from '../../assets/images/projects/skt-ios-sc.png'
+import yosisanSrc from '../../assets/images/projects/yosisan-sc.png'
+import shangeMattonSMSSrc from '../../assets/images/projects/sms-sc.png'
+import sktAndroidSrc from '../../assets/images/projects/skt-android-sc.png'
+import aeronologySrc from '../../assets/images/projects/aeronology-sc.png'
+
 const projects = [
     {
         key: 'skt-mobile-ios',
         title: 'SKT Mobile App iOS',
         time: 'Nov 2019 – Present',
         url: 'https://play.google.com/store/apps/details?id=com.wonders.clientmobileapp',
-        gallery: 'https://entrepreneurcountryglobal.com/wp-content/uploads/2019/11/bg-dev-studio-05.jpg'
+        gallery: sktIOSSrc
     },
     {
         key: 'skt-mobile-android',
         title: 'SKT Mobile App Androidt',
         time: 'May 2019 – Present',
         url: 'https://apps.apple.com/us/app/skt/id1418714514?ls=1',
-        gallery: 'https://entrepreneurcountryglobal.com/wp-content/uploads/2019/11/bg-dev-studio-05.jpg'
+        gallery: sktAndroidSrc
     },
     {
         key: 'aeronology-app',
         title: 'Aeronology Website',
         time: 'Nov 2019',
         url: 'https://www.aeronology.travel/',
-        gallery: 'https://entrepreneurcountryglobal.com/wp-content/uploads/2019/11/bg-dev-studio-05.jpg'
+        gallery: aeronologySrc
     },
     {
         key: 'shping-app',
         title: 'Shping Website',
         time: 'Jan 2018 – Jul 2019',
         url: 'https://www.shping.com/',
-        gallery: 'https://entrepreneurcountryglobal.com/wp-content/uploads/2019/11/bg-dev-studio-05.jpg'
+        gallery: shpingSrc
     },
     {
         key: 'yellow-pages',
         title: 'Yellow Pages Website',
         time: 'Sep 2018 – Mar 2019',
         url: 'https://www.yellowpages.com.au/',
-        gallery: 'https://entrepreneurcountryglobal.com/wp-content/uploads/2019/11/bg-dev-studio-05.jpg'
+        gallery: yellowSrc
     },
     {
         key: 'shanematton-sms',
         title: 'Automated SMS Website',
         time: 'Sep 2018 – Oct 2018',
         url: 'https://shanemhatton-web.now.sh/',
-        gallery: 'https://entrepreneurcountryglobal.com/wp-content/uploads/2019/11/bg-dev-studio-05.jpg'
+        gallery: shangeMattonSMSSrc
     },
     {
         key: 'yosisan-app',
         title: 'Yosisan App Website',
         time: 'Sep 2018 – Oct 2018',
         url: 'https://staging.wherestheyo.com/signin',
-        gallery: 'https://entrepreneurcountryglobal.com/wp-content/uploads/2019/11/bg-dev-studio-05.jpg'
+        gallery: yosisanSrc
     },
     {
         key: 'jami-ph',
         title: 'Jami PH Website',
         time: 'Nov 2016 – Apr 2018',
         url: 'https://jami.ph/',
-        gallery: 'https://entrepreneurcountryglobal.com/wp-content/uploads/2019/11/bg-dev-studio-05.jpg'
+        gallery: jamiSrc
     },
     {
         key: 'phrs-app',
         title: 'PHRS Website',
         time: 'Apr 2015 – Nov 2015',
         url: 'http://www.philippinehotelreservations.com/',
-        gallery: 'https://entrepreneurcountryglobal.com/wp-content/uploads/2019/11/bg-dev-studio-05.jpg'
+        gallery: phrsSrc
     }
 ]
 
