@@ -1,10 +1,16 @@
 import React from 'react'
 
-import { ContainerItem, ContainerItemGallery, ContainerItemContent, ItemContentHeading, ItemContentTimeStamp } from './styles'
+import {
+    ContainerItem,
+    ContainerItemGallery,
+    ContainerItemContent,
+    ItemContentHeading,
+    ItemContentTimeStamp
+} from './styles'
 
 function ProjectItem (props) {
-    const { item } = props
-    const hanleOpenURL = () => window.open(item.url)
+    const { item, onClick } = props
+    const hanleOpenURL = () => onClick(item.url)
     const projectItemElement = (
         <ContainerItem onClick={ hanleOpenURL }>
             <ContainerItemGallery src={ item.gallery } />

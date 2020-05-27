@@ -1,14 +1,15 @@
 import React from 'react'
 
 import { Header, Banner } from './components'
-import { Project } from './pages'
+import { Projects, Experiences } from './pages'
 
 function Portfolio () {
 	const porfolioElement = (
 		<React.Fragment>
 			<Header />
 			<Banner />
-			<Project />
+			<Projects />
+			<Experiences />
 		</React.Fragment>
 	)
 

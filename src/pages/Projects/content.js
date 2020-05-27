@@ -13,14 +13,14 @@ const projects = [
         key: 'skt-mobile-ios',
         title: 'SKT Mobile App iOS',
         time: 'Nov 2019 – Present',
-        url: 'https://play.google.com/store/apps/details?id=com.wonders.clientmobileapp',
+        url: 'https://apps.apple.com/us/app/skt/id1418714514?ls=1',
         gallery: sktIOSSrc
     },
     {
         key: 'skt-mobile-android',
-        title: 'SKT Mobile App Androidt',
+        title: 'SKT Mobile App Android',
         time: 'May 2019 – Present',
-        url: 'https://apps.apple.com/us/app/skt/id1418714514?ls=1',
+        url: 'https://play.google.com/store/apps/details?id=com.wonders.clientmobileapp',
         gallery: sktAndroidSrc
     },
     {

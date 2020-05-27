@@ -1,13 +1,16 @@
 import Styled from 'styled-components'
 
-const Container = Styled.section`
+const Section = Styled.section`
     ${ ({ theme }) => theme.container };
+    margin-top: ${ ({ offsetTop }) => offsetTop }px;
+    padding-bottom: ${ ({ theme }) => theme.spacing * 3 }px;
 `
 
 const ContainerItemContainer = Styled.ul`
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
 `
 
 const ContainerItem = Styled.li`
@@ -55,4 +58,12 @@ const ItemContentTimeStamp = Styled.p`
     color: #6e6e6e;
 `
 
-export { Container, ContainerItemContainer, ContainerItem, ContainerItemGallery, ContainerItemContent, ItemContentHeading, ItemContentTimeStamp }
+export {
+    Section,
+    ContainerItemContainer,
+    ContainerItem,
+    ContainerItemGallery,
+    ContainerItemContent,
+    ItemContentHeading,
+    ItemContentTimeStamp
+}
