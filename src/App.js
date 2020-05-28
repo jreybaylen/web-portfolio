@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Header, Banner } from './components'
-import { Projects, Experiences } from './pages'
+import { Projects, Experiences, Contacts } from './pages'
 
 function Portfolio () {
 	const porfolioElement = (
@@ -10,6 +10,7 @@ function Portfolio () {
 			<Banner />
 			<Projects />
 			<Experiences />
+			<Contacts />
 		</React.Fragment>
 	)
 

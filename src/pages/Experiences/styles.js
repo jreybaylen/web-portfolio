@@ -67,7 +67,9 @@ const DescriptionJobTitle = Styled.p`
     font-weight: 500;
 `
 
-const DescriptionDuration = Styled.p``
+const DescriptionDuration = Styled.p`
+    line-height: 1.5;
+`
 
 const DescriptionJob = Styled.ul`
     padding-left: 0.9em;

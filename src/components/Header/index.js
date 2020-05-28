@@ -16,7 +16,7 @@ function Header () {
                     <NavLink href="#section-experience">Experience</NavLink>
                 </NavListItem>
                 <NavListItem>
-                    <NavLink href="#section-contact">Contact</NavLink>
+                    <NavLink href="#section-contacts">Contacts</NavLink>
                 </NavListItem>
             </NavList>
         </Navbar>
