@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Header, Banner } from './components'
+import { Header, Banner, Footer } from './components'
 import { Projects, Experiences, Contacts } from './pages'
 
 function Portfolio () {
@@ -11,6 +11,7 @@ function Portfolio () {
 			<Projects />
 			<Experiences />
 			<Contacts />
+			<Footer />
 		</React.Fragment>
 	)
 

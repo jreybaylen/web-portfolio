@@ -30,6 +30,10 @@ const ItemContainerListItem = Styled.li`
         box-shadow: 0px 20px 80px 0px rgba(18, 43, 80, 0.2);
     }
 
+    @media only screen and (max-width: 500px) {
+        width: 80%;
+    }
+
     &:hover {
         box-shadow: 0px 20px 80px 0px rgba(18, 43, 80, 0.2);
     }
