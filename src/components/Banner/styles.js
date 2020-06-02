@@ -14,8 +14,21 @@ const Container = Styled.div`
     }
 `
 
+const ProfilePhotoContainer = Styled.div`
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-bottom: ${ ({ theme }) => theme.spacing }px;
+`
+
+const ProfilePhoto = Styled.img`
+    width: 100%;
+    display: block;
+`
+
 const Content = Styled.div`
-    margin-bottom: ${ ({ theme, distanceMultiplier }) => theme.spacing * (distanceMultiplier || 1) }px;
+    margin-bottom: ${ ({ theme, distanceMultiplier }) => theme.spacing * (distanceMultiplier || 1)}px;
 `
 
 const HeadLine = Styled.h1`
@@ -39,6 +52,9 @@ const ModifiedSVGIcon = Styled(SVGIcon)`
     }
 `
 
-const BannerLink = Styled.a``
+const BannerLink = Styled.a`
+    display: flex;
+    justify-content: center;
+`
 
-export { Container, Content, HeadLine, Description, ModifiedSVGIcon, BannerLink }
+export { Container, ProfilePhotoContainer, ProfilePhoto, Content, HeadLine, Description, ModifiedSVGIcon, BannerLink }

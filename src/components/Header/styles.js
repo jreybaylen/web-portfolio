@@ -6,6 +6,10 @@ const Navbar = Styled.nav`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media only screen and (max-width: 414px) {
+        display: none;
+    }
 `
 
 const NavList = Styled.ul`
