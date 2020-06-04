@@ -1,0 +1,112 @@
+import Styled from 'styled-components'
+
+import aboutGallery from '../../assets/images/about/about.jpg'
+
+const Section = Styled.section`
+    margin-top: ${ ({ theme, offsetTop }) => theme.spacing * offsetTop }px;
+    background-image: url(${ aboutGallery });
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 100% 35%;
+`
+
+const Container = Styled.div`
+    ${ ({ theme }) => theme.container };
+    padding: ${ ({ theme }) => theme.spacing * 3 }px 0;
+`
+
+const Information = Styled.div`
+    width: 60%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 #00000033;
+    padding: ${ ({ theme }) => theme.spacing }px;
+    margin-bottom: ${ ({ theme }) => theme.spacing }px;
+`
+
+const InformationHeading = Styled.h2`
+    font-weight: 500;
+`
+const InformationContent = Styled.p`
+    line-height: 1.5;
+    word-break: break-word;
+    ${ ({ bold }) => bold && 'font-weight: 500;' };
+    ${ ({ textCenter }) => textCenter && 'text-align: center;' };
+    ${ ({ noMarginBottom }) => noMarginBottom && 'margin-bottom: 0;' };
+`
+
+const TestimonialCardContainer = Styled.ul`
+    display: flex;
+    padding-left: 0;
+    position: relative;
+    flex-direction: row;
+    transition: ${ ({ theme }) => theme.transition };
+    left: ${ ({ offsetLeft }) => `-${ offsetLeft * 690 }px` };
+`
+
+const TestimonialCard = Styled.li`
+    display: flex;
+    flex: 1 0 100%;
+    list-style: none;
+    border-radius: 5px;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 #00000033;
+    padding: ${ ({ theme }) => theme.spacing }px;
+    margin-right: ${ ({ theme }) => theme.spacing }px;
+    margin-bottom: ${ ({ theme }) => (theme.spacing / 2) - 5 }px;
+`
+
+const TestimonialCardLeft = Styled.div`
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+`
+
+const TestimonialCardRight = Styled.div`
+    margin-left: ${ ({ theme }) => theme.spacing }px;
+
+    & > p:first-of-type {
+        margin-top: 0;
+    }
+`
+
+const SliderControls = Styled.ul`
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+`
+
+const SliderControlsItem = Styled.li`
+    width: 15px;
+    height:15px;
+    margin: 3px;
+    cursor: pointer;
+    list-style: none;
+    border-radius: 100%;
+    background-color: #42434d;
+    transition: ${ ({ theme }) => theme.transition };
+    opacity: ${ ({ active }) => active ? '1' : '0.6' };
+
+    &:hover {
+        opacity: 1;
+    }
+`
+
+export {
+    Section,
+    Container,
+    Information,
+    InformationHeading,
+    InformationContent,
+    TestimonialCardContainer,
+    TestimonialCard,
+    TestimonialCardLeft,
+    TestimonialCardRight,
+    SliderControls,
+    SliderControlsItem
+}

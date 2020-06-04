@@ -27,7 +27,7 @@ const ItemContainerListItem = Styled.li`
     @media only screen and (max-width: 768px) {
         width: 50%;
         margin: ${ ({ theme }) => theme.spacing }px auto;
-        box-shadow: 0px 20px 80px 0px rgba(18, 43, 80, 0.2);
+        box-shadow: 0px 20px 80px 0px #122b5033;
     }
 
     @media only screen and (max-width: 500px) {
@@ -35,7 +35,7 @@ const ItemContainerListItem = Styled.li`
     }
 
     &:hover {
-        box-shadow: 0px 20px 80px 0px rgba(18, 43, 80, 0.2);
+        box-shadow: 0px 20px 80px 0px #122b5033;
     }
 `
 

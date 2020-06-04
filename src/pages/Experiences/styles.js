@@ -16,7 +16,7 @@ const ExperienceItemContainer = Styled.div`
     background: #fff;
     border-radius: 10px;
     flex-direction: row;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 2px 5px 0 #00000026;
     padding: ${ ({ theme }) => theme.spacing }px;
     transition: ${ ({ theme }) => theme.transition };
     margin-bottom: ${ ({ theme }) => theme.spacing }px;
@@ -31,7 +31,7 @@ const ExperienceItemContainer = Styled.div`
     }
     
     &:hover {
-        box-shadow: 0px 20px 80px 0px rgba(18, 43, 80, 0.2);
+        box-shadow: 0px 20px 80px 0px #00000026;
     }
 `
 
