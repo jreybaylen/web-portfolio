@@ -29,10 +29,16 @@ const Information = Styled.div`
 const InformationHeading = Styled.h2`
     font-weight: 500;
 `
+
+const InformationHeadingActivities = Styled.h3`
+    font-weight: 500;
+`
+
 const InformationContent = Styled.p`
     line-height: 1.5;
     word-break: break-word;
     ${ ({ bold }) => bold && 'font-weight: 500;' };
+    ${ ({ textRight }) => textRight && 'text-align: right;' };
     ${ ({ textCenter }) => textCenter && 'text-align: center;' };
     ${ ({ noMarginBottom }) => noMarginBottom && 'margin-bottom: 0;' };
 `
@@ -97,16 +103,48 @@ const SliderControlsItem = Styled.li`
     }
 `
 
+const BoldContent = Styled.span`
+    font-weight: 500;
+`
+
+const ActivityGalleryList = Styled.ul`
+    display: flex;
+    padding-left: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+`
+
+const ActivityGalleryListItem = Styled.li`
+    list-style: none;
+    margin-right: 10px;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+`
+
+const ActivityGallery = Styled.img`
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+`
+
 export {
     Section,
     Container,
     Information,
     InformationHeading,
+    InformationHeadingActivities,
     InformationContent,
     TestimonialCardContainer,
     TestimonialCard,
     TestimonialCardLeft,
     TestimonialCardRight,
     SliderControls,
-    SliderControlsItem
+    SliderControlsItem,
+    BoldContent,
+    ActivityGalleryList,
+    ActivityGalleryListItem,
+    ActivityGallery
 }

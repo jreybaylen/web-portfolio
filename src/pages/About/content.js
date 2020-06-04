@@ -1,7 +1,116 @@
+import travel00Gallery from '../../assets/images/about/activities/travels/outing-0.jpg'
+import travel01Gallery from '../../assets/images/about/activities/travels/outing-1.jpg'
+import travel02Gallery from '../../assets/images/about/activities/travels/outing-2.jpg'
+import travel03Gallery from '../../assets/images/about/activities/travels/outing-3.jpg'
+import travel04Gallery from '../../assets/images/about/activities/travels/outing-4.jpg'
+import avengerGallery from '../../assets/images/about/activities/movies/avenger.png'
+import theRaidGallery from '../../assets/images/about/activities/movies/the-raid.png'
+import moneyHeistGallery from '../../assets/images/about/activities/movies/money-heist.png'
+import prisonBreakGallery from '../../assets/images/about/activities/movies/prison-break.png'
+import justiceLeagueGallery from '../../assets/images/about/activities/movies/justice-league.png'
+
+import dota2Gallery from '../../assets/images/about/activities/games/dota-2.png'
+import csGoGallery from '../../assets/images/about/activities/games/cs-go.png'
+import warframeGallery from '../../assets/images/about/activities/games/warframe.png'
+import battleRealmsGallery from '../../assets/images/about/activities/games/battle-realms.png'
+import mobileLegendsGallery from '../../assets/images/about/activities/games/ml.png'
+
+const activies = [
+    {
+        key: 'travels',
+        name: 'Travels',
+        gallery: [ travel00Gallery, travel01Gallery, travel02Gallery, travel03Gallery, travel04Gallery ]
+    },
+    {
+        key: 'movies',
+        name: 'Movies',
+        gallery: [ avengerGallery, justiceLeagueGallery, prisonBreakGallery, moneyHeistGallery, theRaidGallery ]
+    },
+    {
+        key: 'games',
+        name: 'Games',
+        gallery: [ dota2Gallery, csGoGallery, warframeGallery, battleRealmsGallery, mobileLegendsGallery ]
+    }
+]
+const skills = [
+    {
+        key: 'mobile',
+        name: 'Mobile App Development',
+        percent: 0,
+        framework: [
+            {
+                key: 'react-native',
+                name: 'React Native',
+                percent: 0,
+            },
+            {
+                key: 'react-native',
+                name: 'React Native',
+                percent: 0,
+            }
+        ]
+    },
+    {
+        key: 'front-end',
+        name: 'Front-End Development',
+        percent: 0,
+        framework: [
+            {
+                key: 'react',
+                name: 'React',
+                percent: 0,
+            },
+            {
+                key: 'angular',
+                name: 'Angular',
+                percent: 0,
+            },
+            {
+                key: 'vue',
+                name: 'Vue',
+                percent: 0,
+            }
+        ]
+    },
+    {
+        key: 'back-end',
+        name: 'Back-End Development',
+        percent: 0,
+        framework: [
+            {
+                key: 'node',
+                name: 'Node',
+                percent: 0,
+            },
+            {
+                key: 'php',
+                name: 'PHP',
+                percent: 0,
+            }
+        ]
+    },
+    {
+        key: 'dev-ops',
+        name: 'Dev Ops Development',
+        percent: 0,
+        framework: [
+            {
+                key: 'aws',
+                name: 'AWS',
+                percent: 0,
+            },
+            {
+                key: 'jenkins',
+                name: 'Jenkins',
+                percent: 0,
+            }
+        ]
+    }
+]
 const testimonials = [
     {
-        icon: 'wesley',
         key: 'john-wesley-salvador',
+        icon: 'wesley',
         name: 'John Wesley Salvador',
         jobInformation: 'Senior Software Engineer at Aeronology',
         recommendation: `
@@ -12,8 +121,8 @@ const testimonials = [
         `
     },
     {
-        icon: 'ian',
         key: 'ian-fritz-bacangan',
+        icon: 'ian',
         name: 'Ian Fritz Bacangan',
         jobInformation: 'Software Engineer at Wonders',
         recommendation: `
@@ -23,8 +132,8 @@ const testimonials = [
         `
     },
     {
-        icon: 'michael',
         key: 'michael-nico-suarez',
+        icon: 'michael',
         name: 'Michael Nico Suarez',
         jobInformation: 'Team Lead at Accenture',
         recommendation: `
@@ -33,8 +142,8 @@ const testimonials = [
         `
     },
     {
-        icon: 'bjon',
         key: 'bjon-javin-reyes',
+        icon: 'bjon',
         name: 'Bjon Javin Reyes',
         jobInformation: 'Unity Game Engineer at Upwork',
         recommendation: `
@@ -44,4 +153,4 @@ const testimonials = [
     }
 ]
 
-export { testimonials }
+export { activies, skills, testimonials }
