@@ -1,13 +1,14 @@
 import React from 'react'
 
-import profileGallery from '../../assets/images/banner/profile.jpg'
-import { Container, ProfilePhotoContainer, ProfilePhoto, Content, HeadLine, Description, BannerLink, ModifiedSVGIcon } from './styles'
+import { SVGIcon } from '../../shared/Icons'
+
+import { Container, ProfilePhotoContainer, Content, HeadLine, Description, BannerLink, ModifiedSVGIcon } from './styles'
 
 function Banner () {
     const bannerElement = (
         <Container id="section-banner">
             <ProfilePhotoContainer>
-                <ProfilePhoto src={ profileGallery } />
+                <SVGIcon name="programmer" width="200" height="200" />
             </ProfilePhotoContainer>
             <Content distanceMultiplier={ 7 }>
                 <HeadLine>Hi, I'm John Rey</HeadLine>

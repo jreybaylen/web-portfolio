@@ -130,6 +130,31 @@ const ActivityGallery = Styled.img`
     border-radius: 5px;
 `
 
+const SkillsList = Styled.ul`
+    padding-left: 0;
+    margin-bottom: 0;
+`
+const SkillsListItem = Styled.li`
+    list-style: none;
+    padding-left: ${ ({ theme }) => theme.spacing / 2 }px;
+    margin-bottom: ${ ({ theme }) => theme.spacing / 3 }px;
+    ${ ({ flexItem }) => flexItem && `
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    ` };
+
+    & > svg {
+        margin-right: ${ ({ theme }) => theme.spacing / 2 }px;
+    }
+
+    &:first-of-type {
+        padding-left: 0;
+        font-weight: 500;
+        margin-bottom: ${ ({ theme }) => theme.spacing / 2 }px;
+    }
+`
+
 export {
     Section,
     Container,
@@ -146,5 +171,7 @@ export {
     BoldContent,
     ActivityGalleryList,
     ActivityGalleryListItem,
-    ActivityGallery
+    ActivityGallery,
+    SkillsList,
+    SkillsListItem
 }

@@ -15,11 +15,6 @@ const Container = Styled.div`
 `
 
 const ProfilePhotoContainer = Styled.div`
-    width: 100%;
-    max-width: 200px;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 #00000033;
     margin-bottom: ${ ({ theme }) => theme.spacing }px;
 `
 
