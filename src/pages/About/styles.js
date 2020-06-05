@@ -144,15 +144,34 @@ const SkillsListItem = Styled.li`
         align-items: center;
     ` };
 
-    & > svg {
-        margin-right: ${ ({ theme }) => theme.spacing / 2 }px;
-    }
-
     &:first-of-type {
         padding-left: 0;
         font-weight: 500;
         margin-bottom: ${ ({ theme }) => theme.spacing / 2 }px;
     }
+`
+
+const ListItemContainer = Styled.div`
+    display: flex;
+    flex: 1 0 30%;
+    
+    & > svg {
+        margin-right: ${ ({ theme }) => theme.spacing / 2 }px;
+    }
+`
+
+const ProgressBar = Styled.p`
+    color: #fff;
+    font-size: 70%;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-left: auto;
+    text-align: right;
+    border-radius: 15px;
+    letter-spacing: 1.5px;
+    background-color: #f83030ab;
+    flex: 1 0 ${ ({ percent }) => `${ percent - 30 }%` };
+    padding-right: ${ ({ theme }) => theme.spacing / 2 }px;
 `
 
 export {
@@ -173,5 +192,7 @@ export {
     ActivityGalleryListItem,
     ActivityGallery,
     SkillsList,
-    SkillsListItem
+    SkillsListItem,
+    ListItemContainer,
+    ProgressBar
 }

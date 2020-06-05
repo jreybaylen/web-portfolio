@@ -20,6 +20,7 @@ function Testimonials () {
     const testimonialsElement = (
         <Information>
             <InformationHeading>Testimonials</InformationHeading>
+            <InformationContent>Their opinion about me is really matter</InformationContent>
             <TestimonialCardContainer offsetLeft={ offsetLeft }>
                 { testimonials && testimonials.map(
                     ({ key, icon, name, ...rest }, index) => (

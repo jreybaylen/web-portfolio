@@ -41,13 +41,13 @@ const skills = [
             {
                 key: 'react-native',
                 name: 'React Native',
-                percent: 0,
+                percent: 80,
                 icon: 'react'
             },
             {
                 key: 'hybrid',
                 name: 'Hybrid',
-                percent: 0,
+                percent: 50,
                 icon: 'hybrid'
             }
         ]
@@ -58,21 +58,27 @@ const skills = [
         percent: 0,
         framework: [
             {
+                key: 'javascript',
+                name: 'JavaScript',
+                percent: 90,
+                icon: 'javascript'
+            },
+            {
                 key: 'react',
                 name: 'React',
-                percent: 0,
+                percent: 90,
                 icon: 'react'
             },
             {
                 key: 'angular',
                 name: 'Angular',
-                percent: 0,
+                percent: 70,
                 icon: 'angular'
             },
             {
                 key: 'vue',
                 name: 'Vue',
-                percent: 0,
+                percent: 50,
                 icon: 'vue'
             }
         ]
@@ -85,13 +91,13 @@ const skills = [
             {
                 key: 'node',
                 name: 'Node',
-                percent: 0,
+                percent: 60,
                 icon: 'node'
             },
             {
                 key: 'php',
                 name: 'PHP',
-                percent: 0,
+                percent: 60,
                 icon: 'php'
             }
         ]
@@ -104,13 +110,13 @@ const skills = [
             {
                 key: 'aws',
                 name: 'AWS',
-                percent: 0,
+                percent: 50,
                 icon: 'aws'
             },
             {
                 key: 'jenkins',
                 name: 'Jenkins',
-                percent: 0,
+                percent: 30,
                 icon: 'jenkins'
             }
         ]

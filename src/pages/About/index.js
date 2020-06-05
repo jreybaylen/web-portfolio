@@ -24,9 +24,9 @@ function About () {
                     </InformationContent>
                     <InformationContent textRight noMarginBottom>- <BoldContent children="Albert Einstein" /></InformationContent>
                 </Information>
-                <Activities />
                 <Skills />
                 <Testimonials />
+                <Activities />
             </Container>
         </Section>
     )
