@@ -45,6 +45,18 @@ const skills = [
                 icon: 'react'
             },
             {
+                key: 'apple',
+                name: 'iOS',
+                percent: 30,
+                icon: 'apple'
+            },
+            {
+                key: 'android',
+                name: 'Android',
+                percent: 30,
+                icon: 'android'
+            },
+            {
                 key: 'hybrid',
                 name: 'Hybrid',
                 percent: 50,
@@ -91,7 +103,7 @@ const skills = [
             {
                 key: 'node',
                 name: 'Node',
-                percent: 60,
+                percent: 70,
                 icon: 'node'
             },
             {

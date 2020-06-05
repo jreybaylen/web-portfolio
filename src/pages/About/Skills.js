@@ -17,11 +17,13 @@ function Skills () {
                         { framework && framework.map(
                             ({ key: childKey, name, ...rest }) => (
                                 <SkillsListItem flexItem key={ childKey }>
-                                    <ListItemContainer>
+                                    <ListItemContainer position="left">
                                         <SVGIcon name={ rest.icon } width="50" height="50" />
                                         <InformationContent>{ name }</InformationContent>
                                     </ListItemContainer>
-                                    <ProgressBar percent={ rest.percent }>{ rest.percent }%</ProgressBar>
+                                    <ListItemContainer position="right">
+                                        <ProgressBar percent={ rest.percent }>{ rest.percent }%</ProgressBar>
+                                    </ListItemContainer>
                                 </SkillsListItem>
                             )
                         ) }

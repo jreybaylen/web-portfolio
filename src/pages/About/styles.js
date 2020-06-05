@@ -153,7 +153,7 @@ const SkillsListItem = Styled.li`
 
 const ListItemContainer = Styled.div`
     display: flex;
-    flex: 1 0 30%;
+    width: ${ ({ position }) => position === 'left' ? '30%' : '70%' };
     
     & > svg {
         margin-right: ${ ({ theme }) => theme.spacing / 2 }px;
@@ -162,15 +162,14 @@ const ListItemContainer = Styled.div`
 
 const ProgressBar = Styled.p`
     color: #fff;
-    font-size: 70%;
+    font-size: 80%;
     line-height: 1.5;
     font-weight: 500;
-    margin-left: auto;
     text-align: right;
     border-radius: 15px;
     letter-spacing: 1.5px;
     background-color: #f83030ab;
-    flex: 1 0 ${ ({ percent }) => `${ percent - 30 }%` };
+    width: ${ ({ percent }) => percent }%;
     padding-right: ${ ({ theme }) => theme.spacing / 2 }px;
 `
 
