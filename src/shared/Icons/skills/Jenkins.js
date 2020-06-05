@@ -130,7 +130,7 @@ function Jenkins (props) {
             <path
                 fill="none"
                 d="M18.705 17.928c-.063-.36-.137-.464-.108-.78.963-.642 1.143 1.102.108.78z"
-                cstrokeWidth="0.257"
+                strokeWidth="0.257"
                 stroke="#d33833"
             ></path>
             <path

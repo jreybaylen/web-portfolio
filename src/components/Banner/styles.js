@@ -3,10 +3,11 @@ import Styled from 'styled-components'
 import { SVGIcon } from '../../shared/Icons'
 
 const Container = Styled.div`
-    ${ ({ theme }) => theme.container };
     display: flex;
+    position: relative;
     align-items: center;
     flex-direction: column;
+    ${ ({ theme }) => theme.container };
     margin-top: ${ ({ theme }) => theme.spacing * 5 }px;
 
     @media only screen and (max-width: 600px) {
@@ -50,6 +51,8 @@ const ModifiedSVGIcon = Styled(SVGIcon)`
 
 const BannerLink = Styled.a`
     display: flex;
+    bottom: -100px;
+    position: absolute;
     justify-content: center;
 `
 
