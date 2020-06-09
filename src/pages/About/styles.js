@@ -13,6 +13,7 @@ const Section = Styled.section`
 
 const Container = Styled.div`
     ${ ({ theme }) => theme.container };
+    width: 95%;
     padding: ${ ({ theme }) => theme.spacing * 3 }px 0;
 `
 
@@ -24,6 +25,10 @@ const Information = Styled.div`
     box-shadow: 0 4px 8px 0 #00000033;
     padding: ${ ({ theme }) => theme.spacing }px;
     margin-bottom: ${ ({ theme }) => theme.spacing }px;
+
+    @media only screen and (max-width: 768px) {
+        width: unset;
+    }
 `
 
 const InformationHeading = Styled.h2`
@@ -62,6 +67,10 @@ const TestimonialCard = Styled.li`
     padding: ${ ({ theme }) => theme.spacing }px;
     margin-right: ${ ({ theme }) => theme.spacing }px;
     margin-bottom: ${ ({ theme }) => (theme.spacing / 2) - 5 }px;
+
+    @media only screen and (max-width: 414px) {
+        flex-direction: column;
+    }
 `
 
 const TestimonialCardLeft = Styled.div`
@@ -69,6 +78,10 @@ const TestimonialCardLeft = Styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media only screen and (max-width: 414px) {
+        width: 100%;
+    }
 `
 
 const TestimonialCardRight = Styled.div`
@@ -76,6 +89,14 @@ const TestimonialCardRight = Styled.div`
 
     & > p:first-of-type {
         margin-top: 0;
+    }
+
+    @media only screen and (max-width: 414px) {
+        margin-left: 0;
+
+        & > p:first-of-type {
+            text-align: center;
+        }
     }
 `
 
@@ -134,6 +155,7 @@ const SkillsList = Styled.ul`
     padding-left: 0;
     margin-bottom: 0;
 `
+
 const SkillsListItem = Styled.li`
     list-style: none;
     padding-left: ${ ({ theme }) => theme.spacing / 2 }px;
@@ -149,14 +171,25 @@ const SkillsListItem = Styled.li`
         font-weight: 500;
         margin-bottom: ${ ({ theme }) => theme.spacing / 2 }px;
     }
+
+    @media only screen and (max-width: 700px) {
+        padding-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 `
 
 const ListItemContainer = Styled.div`
     display: flex;
+    align-items: center;
     width: ${ ({ position }) => position === 'left' ? '30%' : '70%' };
     
     & > svg {
         margin-right: ${ ({ theme }) => theme.spacing / 2 }px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
     }
 `
 

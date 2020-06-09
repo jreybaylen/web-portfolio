@@ -6,7 +6,9 @@ const Section = Styled.section`
     padding: ${ ({ theme }) => theme.spacing * 3 }px 0;
 `
 
-const Label = Styled.div``
+const Label = Styled.div`
+    
+`
 
 const ItemContainerList = Styled.ul`
     display: flex;
@@ -16,6 +18,7 @@ const ItemContainerList = Styled.ul`
     margin-top: ${ ({ theme }) => theme.spacing * 4 }px;
 
     @media only screen and (max-width: 768px) {
+        margin-top: 0;
         flex-direction: column;
     }
 `

@@ -27,7 +27,7 @@ const ExperienceItemContainer = Styled.div`
     ${ ({ position }) => position === 'right' && 'margin-left: auto' };
 
     @media only screen and (max-width: 768px) {
-        width: 100%;
+        width: unset;
     }
 
     @media only screen and (max-width: 600px) {

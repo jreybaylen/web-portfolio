@@ -25,8 +25,12 @@ const ContainerItem = Styled.li`
     margin: ${ ({ theme }) => theme.spacing }px;
     transition: ${ ({ theme }) => theme.transition };
 
+    @media only screen and (max-width: 768px) {
+        flex: 1 0 50%;
+    }
+
     @media only screen and (max-width: 600px) {
-        flex: 1 0 89%;
+        flex: 1 0 85%;
     }
 
     &:hover {

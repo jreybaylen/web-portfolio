@@ -8,11 +8,7 @@ const Container = Styled.div`
     align-items: center;
     flex-direction: column;
     ${ ({ theme }) => theme.container };
-    margin-top: ${ ({ theme }) => theme.spacing * 5 }px;
-
-    @media only screen and (max-width: 600px) {
-        margin-top: ${ ({ theme }) => theme.spacing * 2 }px;
-    }
+    margin-top: 10%;
 `
 
 const ProfilePhotoContainer = Styled.div`
@@ -50,8 +46,8 @@ const ModifiedSVGIcon = Styled(SVGIcon)`
 `
 
 const BannerLink = Styled.a`
+    bottom: 0;
     display: flex;
-    bottom: -100px;
     position: absolute;
     justify-content: center;
 `
