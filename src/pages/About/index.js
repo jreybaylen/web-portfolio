@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Modal } from './Modal'
 import { Skills } from './Skills'
 import { Activities } from './Activities'
 import { Testimonials } from './Testimonials'
@@ -7,8 +8,19 @@ import { Testimonials } from './Testimonials'
 import { Section, Container, Information, InformationHeading, InformationContent, BoldContent } from './styles'
 
 function About () {
+    const [ imageSrc, setImageSrc ] = React.useState(null)
+    const handleShowImage = (url) => url && setImageSrc(url)
+    const handleResetImage = () => setImageSrc(null)
+
+    React.useEffect(() => {
+        const bodyClassList = document.body.classList
+        
+        imageSrc ? bodyClassList.add('remove-scroll') : bodyClassList.remove('remove-scroll')
+    }, [ imageSrc ])
+
     const aboutElement = (
         <Section id="section-about" offsetTop={ 5 }>
+            <Modal imageSrc={ imageSrc } onReset={ handleResetImage } />
             <Container>
                 <Information>
                     <InformationHeading>Hi, I'm John Rey</InformationHeading>
@@ -26,7 +38,7 @@ function About () {
                 </Information>
                 <Skills />
                 <Testimonials />
-                <Activities />
+                <Activities onShowImage={ handleShowImage } />
             </Container>
         </Section>
     )

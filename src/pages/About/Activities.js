@@ -11,7 +11,8 @@ import {
     ActivityGallery
 } from './styles'
 
-function Activities () {
+function Activities (props) {
+    const { onShowImage } = props
     const activitiesElement = (
         <Information>
             <InformationHeading>Activities</InformationHeading>
@@ -22,11 +23,15 @@ function Activities () {
                         <InformationHeadingActivities>{ name }</InformationHeadingActivities>
                         <ActivityGalleryList>
                             { rest.gallery && rest.gallery.map(
-                                (photo, index) => (
-                                    <ActivityGalleryListItem key={ `${ index }-${ photo }` }>
-                                        <ActivityGallery src={ photo } />
-                                    </ActivityGalleryListItem>
-                                )
+                                (photo, index) => {
+                                    const handleImageClick = () => onShowImage(photo)
+
+                                    return (
+                                        <ActivityGalleryListItem key={ `${ index }-${ photo }` }>
+                                            <ActivityGallery onClick={ handleImageClick } src={ photo } />
+                                        </ActivityGalleryListItem>
+                                    )
+                                }
                             ) }
                         </ActivityGalleryList>
                     </React.Fragment>

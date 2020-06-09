@@ -137,11 +137,18 @@ const ActivityGalleryList = Styled.ul`
 `
 
 const ActivityGalleryListItem = Styled.li`
+    padding: 5px;
+    cursor: pointer;
     list-style: none;
-    margin-right: 10px;
+    border-radius: 5px;
+    transition: ${ ({ theme }) => theme.transition };
 
     &:last-of-type {
         margin-right: 0;
+    }
+
+    &:hover {
+        box-shadow: 0 4px 8px 0 #000000a1;
     }
 `
 
@@ -206,6 +213,66 @@ const ProgressBar = Styled.p`
     padding-right: ${ ({ theme }) => theme.spacing / 2 }px;
 `
 
+const ImageViewer = Styled.div`
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    position: fixed;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: ${ ({ theme }) => theme.spacing * 2 }px;
+`
+
+const ImageViewerContent = Styled.div`
+    margin: auto;
+    height: 100%;
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    width: max-content;
+    position: relative;
+    align-items: center;
+    background-color: #fff;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 #000000a1;
+    padding: ${ ({ theme }) => theme.spacing }px;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+`
+
+const ImageLarge = Styled.img`
+    display: block;
+    max-width:100%;
+    max-height:100%;
+    border-radius: 5px;
+`
+
+const ImageControl = Styled.button`
+    top: -15px;
+    outline: 0;
+    right: -15px;
+    border: none;
+    color: #898989;
+    font-size: 200%;
+    cursor: pointer;
+    line-height: 0.5;
+    font-weight: 400;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #fff;
+    padding ${ ({ theme }) => theme.spacing / 2 }px;
+    transition: ${ ({ theme }) => theme.transition };
+
+    &:hover {
+        color: #303030;
+    }
+`
+
 export {
     Section,
     Container,
@@ -226,5 +293,9 @@ export {
     SkillsList,
     SkillsListItem,
     ListItemContainer,
-    ProgressBar
+    ProgressBar,
+    ImageViewer,
+    ImageViewerContent,
+    ImageLarge,
+    ImageControl
 }
