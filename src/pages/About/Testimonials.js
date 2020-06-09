@@ -16,12 +16,23 @@ import {
 } from './styles'
 
 function Testimonials () {
+    const [ distance, setDistance ] = React.useState(0)
     const [ offsetLeft, setOffsetLeft ] = React.useState(0)
+    const responsiveOffset = () => {
+        const selector = document.getElementById('testimonial-container')
+
+        setDistance(selector.clientWidth - 30)
+    }
+
+    React.useEffect(() => {
+        window.addEventListener('load', responsiveOffset)
+    })
+
     const testimonialsElement = (
-        <Information>
+        <Information id="testimonial-container">
             <InformationHeading>Testimonials</InformationHeading>
             <InformationContent>Their opinion about me is really matter</InformationContent>
-            <TestimonialCardContainer offsetLeft={ offsetLeft }>
+            <TestimonialCardContainer offsetMultiplier={ distance } offsetLeft={ offsetLeft }>
                 { testimonials && testimonials.map(
                     ({ key, icon, name, ...rest }, index) => (
                         <TestimonialCard key={ key } active={ offsetLeft === index }>

@@ -54,7 +54,7 @@ const TestimonialCardContainer = Styled.ul`
     position: relative;
     flex-direction: row;
     transition: ${ ({ theme }) => theme.transition };
-    left: ${ ({ offsetLeft }) => `-${ offsetLeft * 690 }px` };
+    left: ${ ({ offsetLeft, offsetMultiplier }) => `-${ offsetLeft * offsetMultiplier }px` };
 `
 
 const TestimonialCard = Styled.li`
