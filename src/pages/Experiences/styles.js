@@ -1,13 +1,17 @@
 import Styled from 'styled-components'
 
 const Section = Styled.section`
+    position: relative;
     background: #efefef;
     padding: ${ ({ theme }) => theme.spacing * 3 }px 0;
 `
 
 const ExperienceWrapper = Styled.div`
+    position: relative;
     ${ ({ theme }) => theme.container };
 `
+
+const Label = Styled.div``
 
 const ExperienceItemContainer = Styled.div`
     width: 65%;
@@ -89,6 +93,7 @@ const DescriptionJobItem = Styled.li`
 
 export { 
     Section,
+    Label,
     ExperienceWrapper,
     ExperienceItemContainer,
     ItemContainerGalleryContainer,

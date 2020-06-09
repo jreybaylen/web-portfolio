@@ -38,6 +38,10 @@
 	0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
 }
 
+body {
+	overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
     width: 10px;
     background-color: #fff;
@@ -55,4 +59,40 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-button {
 	display: none;
+}
+
+.bg-text {
+	top: 0;
+	bottom: 0;
+	right: 35%;
+    display: flex;
+	color: #e8e8e8;
+    font-size: 1000%;
+	font-weight: 900;
+	position: absolute;
+	letter-spacing: 15px;
+	justify-content: center;
+	transform: rotate(90deg);
+	text-shadow: 1px 1px #ddd;
+}
+
+.bg-text.text-left {
+	left: unset;
+	z-index: -1;
+	align-items: flex-end;
+}
+
+.bg-text.text-right {
+	right: 30%;
+	color: #fff;
+	align-items: flex-start;
+}
+
+.bg-text.text-center {
+	top: 60px;
+	z-index: -1;
+	bottom: unset;
+	font-size: 500%;
+	letter-spacing: 5px;
+	transform: rotate(0deg);
 }

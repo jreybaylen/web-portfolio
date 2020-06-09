@@ -1,15 +1,19 @@
 import Styled from 'styled-components'
 
 const Section = Styled.section`
+    position: relative;
     ${ ({ theme }) => theme.container };
     padding: ${ ({ theme }) => theme.spacing * 3 }px 0;
 `
+
+const Label = Styled.div``
 
 const ItemContainerList = Styled.ul`
     display: flex;
     padding-left: 0;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: ${ ({ theme }) => theme.spacing * 4 }px;
 
     @media only screen and (max-width: 768px) {
         flex-direction: column;
@@ -53,12 +57,13 @@ const ItemGallery = Styled.img`
 
 const ItemDescription = Styled.h3`
     margin-bottom: 0;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
 `
 
 export {
     Section,
+    Label,
     ItemContainerList,
     ItemContainerListItem,
     ItemGalleryContainer,

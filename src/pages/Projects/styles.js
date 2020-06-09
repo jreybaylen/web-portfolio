@@ -1,9 +1,12 @@
 import Styled from 'styled-components'
 
 const Section = Styled.section`
+    position: relative;
     ${ ({ theme }) => theme.container };
     padding: ${ ({ theme }) => theme.spacing * 3 }px 0;
 `
+
+const Label = Styled.div``
 
 const ContainerItemContainer = Styled.ul`
     padding: 0;
@@ -59,6 +62,7 @@ const ItemContentTimeStamp = Styled.p`
 
 export {
     Section,
+    Label,
     ContainerItemContainer,
     ContainerItem,
     ContainerItemGallery,
