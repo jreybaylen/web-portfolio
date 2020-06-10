@@ -164,7 +164,7 @@ const testimonials = [
         name: 'Michael Nico Suarez',
         jobInformation: 'Team Lead at Accenture',
         recommendation: `
-            Johnrey is wonderful to work with, and has exceptional expertise in front-end development. 
+            JRey is wonderful to work with, and has exceptional expertise in front-end development. 
             He consistently demonstrated a solid work ethic and with dedication to success.
         `
     },

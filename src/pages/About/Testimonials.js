@@ -42,7 +42,7 @@ function Testimonials () {
                             </TestimonialCardLeft>
                             <TestimonialCardRight>
                                 <InformationContent bold>{ rest.jobInformation }</InformationContent>
-                                <InformationContent>"{ rest.recommendation }"</InformationContent>
+                                <InformationContent textJustify>"{ rest.recommendation }"</InformationContent>
                             </TestimonialCardRight>
                         </TestimonialCard>
                     )

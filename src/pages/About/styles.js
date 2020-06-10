@@ -45,6 +45,7 @@ const InformationContent = Styled.p`
     ${ ({ bold }) => bold && 'font-weight: 500;' };
     ${ ({ textRight }) => textRight && 'text-align: right;' };
     ${ ({ textCenter }) => textCenter && 'text-align: center;' };
+    ${ ({ textJustify }) => textJustify && 'text-align: justify;' };
     ${ ({ noMarginBottom }) => noMarginBottom && 'margin-bottom: 0;' };
 `
 
