@@ -21,7 +21,7 @@ const experiences = [
     },
     {
         key: 'shping-company',
-        title: 'Accenture',
+        title: 'Shping',
         time: '( November 2018 - July 2019 )',
         url: 'https://www.shping.com/',
         gallery: shpingGallery,

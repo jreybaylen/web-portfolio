@@ -12,7 +12,7 @@ function Banner () {
             </ProfilePhotoContainer>
             <Content distanceMultiplier={ 7 }>
                 <HeadLine>Hi, I'm John Rey</HeadLine>
-                <Description>Software Engineer, Front End and Mobile App Developer</Description>
+                <Description>Software Engineer, Mobile App and Front End Developer</Description>
             </Content>
             <BannerLink href="#section-about">
                 <ModifiedSVGIcon className="bounce-infinite" name="mouse" width="50" height="50" />

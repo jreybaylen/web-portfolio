@@ -8,9 +8,9 @@ const Container = Styled.footer`
 const Content = Styled.div`
     display: flex;
     color: #a3a3a3;
-    flex-direction: row;
     justify-content: center;
     ${ ({ theme }) => theme.container };
+    flex-direction: ${ ({ column }) => column ? 'column' : 'row' };
 
     @media only screen and (max-width: 500px) {
         flex-direction: column;
@@ -23,19 +23,47 @@ const CopyRight = Styled.span`
 `
 
 const AuthorName = Styled.p`
-    margin-right: 5px;
-
-    @media only screen and (max-width: 500px) {
-        margin-bottom: 0;
-        text-align: center;
-    }
+    margin-bottom: 0;
+    text-align: center;
 `
 
-const AllRightsReserved = Styled.p`
+const FooterText = Styled.p`
+    line-height: 1.5;
+    margin-left: 5px;
+    text-align: center;
+    
     @media only screen and (max-width: 500px) {
         margin-top: 8px;
         text-align: center;
     }
 `
 
-export { Container, Content, CopyRight, AuthorName, AllRightsReserved }
+const FooterImage = Styled.img`
+    heght: 70px;
+    width: 70px;
+`
+
+const FooterSupport = Styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: ${ ({ theme }) => theme.spacing }px;
+    margin-top: ${ ({ theme }) => theme.spacing / 2 }px;
+
+    & > img {
+        margin-left: ${ ({ theme }) => theme.spacing }px;
+    }
+
+    @media only screen and (max-width: 414px) {
+        ${ ({ column }) => column && `
+            flex-direction: column;
+            
+            & > p:first-of-type {
+                margin-bottom: 0;
+            }
+        ` };
+    }
+`
+
+export { Container, Content, CopyRight, AuthorName, FooterText, FooterImage, FooterSupport }

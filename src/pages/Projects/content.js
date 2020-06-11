@@ -19,7 +19,7 @@ const projects = [
     {
         key: 'skt-mobile-android',
         title: 'SKT Mobile App Android',
-        time: 'May 2019 – Present',
+        time: 'May 2020 – Present',
         url: 'https://play.google.com/store/apps/details?id=com.wonders.clientmobileapp',
         gallery: sktAndroidSrc
     },

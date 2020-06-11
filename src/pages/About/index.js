@@ -28,7 +28,7 @@ function About () {
                         Currently working as a Software Engineer focused on mobile app development.
                         I have more than 5 years of experience in web development specially in Front-End stuff.
                         I had an experienced in <BoldContent children="Front-End" />, <BoldContent children="Back-End" /> and <BoldContent children="Dev Ops" /> development.
-                        When I have a free time, I read books and articles about programming, watch movies, play computer games and get involve to other stuff related to techonology.
+                        When I have a free time, I read books and articles about programming, watch movies, play computer games and get involve to other stuff related to technology.
                     </InformationContent>
                     <InformationContent textJustify noMarginBottom>
                         "Imagination is more important than knowledge. 
