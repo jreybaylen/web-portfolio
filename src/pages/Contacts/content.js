@@ -20,7 +20,7 @@ const contacts = [
     {
         key: 'gmail-contact',
         title: 'Gmail',
-        url: 'https://mail.google.com/mail/?view=cm&amp;to=johnreybaylen211995@gmail.com',
+        url: 'https://mail.google.com/mail/?view=cm&to=johnreybaylen211995@gmail.com',
         gallery: gmailGallery
     },
     {

@@ -136,6 +136,16 @@ const skills = [
 ]
 const testimonials = [
     {
+        key: 'jegger-saren',
+        icon: 'michael',
+        name: 'Jegger Saren',
+        jobInformation: 'Software Engineer at Wonders',
+        recommendation: `
+            John Rey is very passionate and has great vision for his work and he makes things happen! 
+            Through the years, we worked on various projects at Transcosmos Asia Philippines Inc and Wonders Corporation and I was impressed by his manner of doing a great job.
+        `
+    },
+    {
         key: 'john-wesley-salvador',
         icon: 'wesley',
         name: 'John Wesley Salvador',
