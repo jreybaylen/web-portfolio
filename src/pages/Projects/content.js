@@ -4,22 +4,38 @@ import shpingSrc from '../../assets/images/projects/shping-sc.png'
 import yellowSrc from '../../assets/images/projects/yellow-sc.png'
 import sktIOSSrc from '../../assets/images/projects/skt-ios-sc.png'
 import yosisanSrc from '../../assets/images/projects/yosisan-sc.png'
+import sktIOSSrc2 from '../../assets/images/projects/skt-ios-2-sc.png'
 import shangeMattonSMSSrc from '../../assets/images/projects/sms-sc.png'
-import sktAndroidSrc from '../../assets/images/projects/skt-android-sc.png'
 import aeronologySrc from '../../assets/images/projects/aeronology-sc.png'
+import sktAndroidSrc from '../../assets/images/projects/skt-android-sc.png'
+import sktAndroidSrc2 from '../../assets/images/projects/skt-android-2-sc.png'
 
 const projects = [
     {
+        key: 'skt-mobile-ios-2',
+        title: 'SKT Mobile App iOS 2',
+        time: 'Jun 2020 – Present',
+        url: 'https://apps.apple.com/us/app/skt/id1522302221',
+        gallery: sktIOSSrc2
+    },
+    {
+        key: 'skt-mobile-android-2',
+        title: 'SKT Mobile App Android 2',
+        time: 'Jun 2020 – Present',
+        url: 'https://play.google.com/store/apps/details?id=com.skt.clientmobileapp.wonders',
+        gallery: sktAndroidSrc2
+    },
+    {
         key: 'skt-mobile-ios',
         title: 'SKT Mobile App iOS',
-        time: 'Nov 2019 – Present',
+        time: 'Nov 2019 – Dec 2020',
         url: 'https://apps.apple.com/us/app/skt/id1418714514?ls=1',
         gallery: sktIOSSrc
     },
     {
         key: 'skt-mobile-android',
         title: 'SKT Mobile App Android',
-        time: 'May 2020 – Present',
+        time: 'May 2020 – Dec 2020',
         url: 'https://play.google.com/store/apps/details?id=com.wonders.clientmobileapp',
         gallery: sktAndroidSrc
     },

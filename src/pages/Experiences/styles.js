@@ -1,9 +1,13 @@
 import Styled from 'styled-components'
 
 const Section = Styled.section`
-    position: relative;
     background: #efefef;
     padding: ${ ({ theme }) => theme.spacing * 3 }px 0;
+`
+
+const SectionInner = Styled.div`
+    position: relative;
+    ${ ({ theme }) => theme.container };
 `
 
 const ExperienceWrapper = Styled.div`
@@ -103,5 +107,6 @@ export {
     DescriptionDuration,
     DescriptionJobTitle,
     DescriptionJob,
-    DescriptionJobItem
+    DescriptionJobItem,
+    SectionInner
 }

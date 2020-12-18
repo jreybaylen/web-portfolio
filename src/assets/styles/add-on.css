@@ -77,13 +77,13 @@ body::-webkit-scrollbar-button {
 }
 
 .bg-text.text-left {
-	left: unset;
+	left: 44%;
 	z-index: -1;
 	align-items: flex-end;
 }
 
 .bg-text.text-right {
-	left: 30%;
+	left: 20%;
 	color: #fff;
 	align-items: flex-start;
 }

@@ -41,25 +41,25 @@ const skills = [
             {
                 key: 'react-native',
                 name: 'React Native',
-                percent: 80,
+                percent: 90,
                 icon: 'react'
             },
             {
                 key: 'apple',
                 name: 'iOS',
-                percent: 30,
+                percent: 50,
                 icon: 'apple'
             },
             {
                 key: 'android',
                 name: 'Android',
-                percent: 30,
+                percent: 50,
                 icon: 'android'
             },
             {
                 key: 'hybrid',
                 name: 'Hybrid',
-                percent: 50,
+                percent: 90,
                 icon: 'hybrid'
             }
         ]
@@ -84,7 +84,7 @@ const skills = [
             {
                 key: 'angular',
                 name: 'Angular',
-                percent: 70,
+                percent: 50,
                 icon: 'angular'
             },
             {
@@ -103,13 +103,13 @@ const skills = [
             {
                 key: 'node',
                 name: 'Node',
-                percent: 70,
+                percent: 80,
                 icon: 'node'
             },
             {
                 key: 'php',
                 name: 'PHP',
-                percent: 60,
+                percent: 50,
                 icon: 'php'
             }
         ]
@@ -122,7 +122,7 @@ const skills = [
             {
                 key: 'aws',
                 name: 'AWS',
-                percent: 50,
+                percent: 60,
                 icon: 'aws'
             },
             {
