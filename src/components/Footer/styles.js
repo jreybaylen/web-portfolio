@@ -28,8 +28,8 @@ const AuthorName = Styled.p`
 `
 
 const FooterText = Styled.p`
-    line-height: 1.5;
     margin-left: 5px;
+    font-size: 90%;
     text-align: center;
     
     @media only screen and (max-width: 500px) {
@@ -66,4 +66,14 @@ const FooterSupport = Styled.div`
     }
 `
 
-export { Container, Content, CopyRight, AuthorName, FooterText, FooterImage, FooterSupport }
+const Link = Styled.a`
+    color: #a3a3a3;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+        color: #e2e0e0;
+    }
+`
+
+export { Container, Content, CopyRight, AuthorName, FooterText, FooterImage, FooterSupport, Link }
