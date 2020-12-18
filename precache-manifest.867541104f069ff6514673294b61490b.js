@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2e536a2e2f1aa1eb833bfa228299445",
+    "revision": "af9e9cc0f13d744f963f4c9d9594148c",
     "url": "/web-portfolio/index.html"
   },
   {
-    "revision": "e8d4d21a7ac88a7e7ccb",
-    "url": "/web-portfolio/static/css/main.69278b25.chunk.css"
+    "revision": "846397f4cbfb3291fdaf",
+    "url": "/web-portfolio/static/css/main.20e9a9d2.chunk.css"
   },
   {
-    "revision": "65329f8a9f1b9142fbdb",
-    "url": "/web-portfolio/static/js/2.81b36e80.chunk.js"
+    "revision": "037bb00eb2f3dfc40fff",
+    "url": "/web-portfolio/static/js/2.a0aabbe6.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/web-portfolio/static/js/2.81b36e80.chunk.js.LICENSE.txt"
+    "url": "/web-portfolio/static/js/2.a0aabbe6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e8d4d21a7ac88a7e7ccb",
-    "url": "/web-portfolio/static/js/main.c4e8e19d.chunk.js"
+    "revision": "846397f4cbfb3291fdaf",
+    "url": "/web-portfolio/static/js/main.55aa1ade.chunk.js"
   },
   {
     "revision": "54cd28a1440c45eb490b",
@@ -108,8 +108,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-portfolio/static/media/shping-sc.025ba866.png"
   },
   {
+    "revision": "dbc43299b701b710cc354a91f3c3b45c",
+    "url": "/web-portfolio/static/media/skt-android-2-sc.dbc43299.png"
+  },
+  {
     "revision": "e3ce1bd86fc171185ef96155ee963cd9",
     "url": "/web-portfolio/static/media/skt-android-sc.e3ce1bd8.png"
+  },
+  {
+    "revision": "a42cdb72d5f6ff137659e518a3a966a7",
+    "url": "/web-portfolio/static/media/skt-ios-2-sc.a42cdb72.png"
   },
   {
     "revision": "bf5abd6ae2ebca3cedbb78d67a436b90",
