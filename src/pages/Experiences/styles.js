@@ -18,7 +18,7 @@ const ExperienceWrapper = Styled.div`
 const Label = Styled.div``
 
 const ExperienceItemContainer = Styled.div`
-    width: 65%;
+    width: 70%;
     display: flex;
     cursor: pointer;
     background: #fff;
@@ -67,7 +67,15 @@ const DescriptionCompany = Styled.h3`
     text-align: center;
 `
 
-const ItemContainerDescriptionContainer = Styled.div``
+const ItemContainerDescriptionContainer = Styled.div`
+    dispay: flex;
+    flex-direction: column;
+`
+
+const ItemContainerDescriptionInnerContainer = Styled.div`
+    margin-bottom: ${ ({ theme }) => theme.spacing }px;
+    ${ ({ bottomBorder }) => bottomBorder && 'border-bottom: 2px solid #e8e8e8' };
+`
 
 const DescriptionJobTitle = Styled.p`
     margin-top: 0;  
@@ -104,6 +112,7 @@ export {
     ItemContainerGallery,
     DescriptionCompany,
     ItemContainerDescriptionContainer,
+    ItemContainerDescriptionInnerContainer,
     DescriptionDuration,
     DescriptionJobTitle,
     DescriptionJob,

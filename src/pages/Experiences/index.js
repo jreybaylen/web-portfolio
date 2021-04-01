@@ -10,8 +10,8 @@ function Experiences () {
     const experiencesElement = (
         <Section id="section-experience">
             <SectionInner>
-                <Label className="bg-text text-right">Experiences</Label>
                 <ExperienceWrapper>
+                    <Label className="bg-text text-right">Experiences</Label>
                     { experiences && experiences.map(
                         (experience, i) => (
                             <ExperienceItem 

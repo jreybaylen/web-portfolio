@@ -6,6 +6,7 @@ import {
     ItemContainerGallery,
     DescriptionCompany,
     ItemContainerDescriptionContainer,
+    ItemContainerDescriptionInnerContainer,
     DescriptionDuration,
     DescriptionJobTitle,
     DescriptionJob,
@@ -15,6 +16,7 @@ import {
 function ExperienceItem(props) {
     const { item, position, onClick } = props
     const hanleOpenURL = () => onClick(item.url)
+    const jobInformationLength = item.jobInformation.length - 1
     const experienceItemElement = (
         <ExperienceItemContainer position={ position } onClick={ hanleOpenURL }>
             <ItemContainerGalleryContainer>
@@ -22,14 +24,27 @@ function ExperienceItem(props) {
                 <DescriptionCompany>{ item.title }</DescriptionCompany>
             </ItemContainerGalleryContainer>
             <ItemContainerDescriptionContainer>
-                <DescriptionJobTitle>{ item.jobTitle }</DescriptionJobTitle>
-                <DescriptionDuration>{ item.time }</DescriptionDuration>
-                <DescriptionJob>
-                    <DescriptionJobItem>Job Description</DescriptionJobItem>
-                    { item.jobDescription && item.jobDescription.map(
-                        (jobDescription) => <DescriptionJobItem key={ `jd-${ jobDescription }` }>{ jobDescription }</DescriptionJobItem>
-                    ) }
-                </DescriptionJob>
+                { item.jobInformation.map(
+                    ({ key, title, description, ...rest }, index) => (
+                        <ItemContainerDescriptionInnerContainer
+                            key={ `${ item.key }-${ index }-${ key }` }
+                            bottomBorder={ jobInformationLength !== index }
+                        >
+                            <DescriptionJobTitle>{ title }</DescriptionJobTitle>
+                            <DescriptionDuration>{ rest.time }</DescriptionDuration>
+                            <DescriptionJob>
+                                <DescriptionJobItem>Job Description</DescriptionJobItem>
+                                { description && description.map(
+                                    (jobDescription) => (
+                                        <DescriptionJobItem key={ `jd-${ jobDescription }` }>
+                                            { jobDescription }
+                                        </DescriptionJobItem>
+                                    )
+                                ) }
+                            </DescriptionJob>
+                        </ItemContainerDescriptionInnerContainer>
+                    )
+                ) }
             </ItemContainerDescriptionContainer>
         </ExperienceItemContainer>
     )

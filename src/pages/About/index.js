@@ -25,13 +25,14 @@ function About () {
                 <Information>
                     <InformationHeading>Hi, I'm John Rey</InformationHeading>
                     <InformationContent textJustify>
-                        Currently working as a Software Engineer focused on mobile app development.
-                        I have more than 5 years of experience in web development specially in Front-End stuff.
-                        I had an experienced in <BoldContent children="Front-End" />, <BoldContent children="Back-End" /> and <BoldContent children="Dev Ops" /> development.
-                        When I have a free time, I read books and articles about programming, watch movies, play computer games and get involve to other stuff related to technology.
+                        Lead Software Engineer focused on mobile app development using cross-platform technology such as&nbsp;
+                        <BoldContent>React Native</BoldContent>, <BoldContent>Ionic React</BoldContent>, and <BoldContent>Capacitor</BoldContent>.
+                    </InformationContent>
+                    <InformationContent textJustify>
+                        Watching movies, playing games and programming are my hobbies
                     </InformationContent>
                     <InformationContent textJustify noMarginBottom>
-                        "Imagination is more important than knowledge. 
+                        "Imagination is more important than knowledge.
                         For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution" 
                     </InformationContent>
                     <InformationContent textRight noMarginBottom>- <BoldContent children="Albert Einstein" /></InformationContent>

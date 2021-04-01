@@ -9,7 +9,6 @@ function Skills () {
     const skillsElement = (
         <Information>
             <InformationHeading>Skills</InformationHeading>
-            <InformationContent>The skills listed below are not specific. I'll let you know all of my skills</InformationContent>
             { skills && skills.map(
                 ({ key, name, framework }) => (
                     <SkillsList key={ key }>

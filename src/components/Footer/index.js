@@ -10,7 +10,7 @@ function Footer () {
     const footerElement = (
         <Container>
             <Content column>
-                <FooterText>Libraries and Frameworks</FooterText>
+                <FooterText>Libraries</FooterText>
                 <FooterSupport>
                     <SVGIcon name="react" width="70" height="70" />
                     <FooterImage src={ styledComponentsGallery } />
