@@ -97,6 +97,12 @@ body::-webkit-scrollbar-button {
 	transform: rotate(0deg);
 }
 
+.skills-ionic {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #478aff;
+}
+
 @media only screen and (max-width: 768px) {
 	.bg-text {
 		display: none;

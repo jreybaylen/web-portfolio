@@ -41,8 +41,14 @@ const skills = [
             {
                 key: 'react-native',
                 name: 'React Native',
-                percent: 90,
+                percent: 80,
                 icon: 'react'
+            },
+            {
+                key: 'capacitor',
+                name: 'Capacitor',
+                percent: 80,
+                icon: 'capacitor'
             },
             {
                 key: 'apple',
@@ -55,12 +61,6 @@ const skills = [
                 name: 'Android',
                 percent: 50,
                 icon: 'android'
-            },
-            {
-                key: 'hybrid',
-                name: 'Hybrid',
-                percent: 90,
-                icon: 'hybrid'
             }
         ]
     },
@@ -80,6 +80,18 @@ const skills = [
                 name: 'React',
                 percent: 90,
                 icon: 'react'
+            },
+            {
+                key: 'ionic',
+                name: 'Ionic',
+                percent: 90,
+                icon: 'ionic'
+            },
+            {
+                key: 'typescript',
+                name: 'TypeScript',
+                percent: 80,
+                icon: 'typescript'
             },
             {
                 key: 'svelte',
@@ -123,6 +135,12 @@ const skills = [
                 name: 'PHP',
                 percent: 50,
                 icon: 'php'
+            },
+            {
+                key: 'java',
+                name: 'Java',
+                percent: 30,
+                icon: 'java'
             }
         ]
     },
@@ -131,6 +149,12 @@ const skills = [
         name: 'Dev Ops Development',
         percent: 0,
         framework: [
+            {
+                key: 'git',
+                name: 'Git',
+                percent: 70,
+                icon: 'git'
+            },
             {
                 key: 'aws',
                 name: 'AWS',

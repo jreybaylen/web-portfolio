@@ -3,7 +3,7 @@ import React from 'react'
 import { Mouse } from './Mouse'
 import { Programmer } from './Programmer'
 import { Wesley, Ian, Michael, Bjon } from './testimonials'
-import { Hybrid, ReactIcon, Angular, Vue, Node, PHP, AWS, Jenkins, JavaScript, Apple, Android, Next, Svelte } from './skills'
+import { Git, Typescript, Ionic, ReactIcon, Angular, Vue, Node, PHP, AWS, Jenkins, JavaScript, Apple, Android, Next, Svelte, Java, Capacitor } from './skills'
 
 function SVGIcon ({ name, ...rest }) {
     if (name === 'mouse') {
@@ -30,8 +30,8 @@ function SVGIcon ({ name, ...rest }) {
         return <Wesley { ...rest } />
     }
 
-    if (name === 'hybrid') {
-        return <Hybrid { ...rest } />
+    if (name === 'ionic') {
+        return <Ionic { ...rest } />
     }
 
     if (name === 'react' || name === 'react-native') {
@@ -80,6 +80,22 @@ function SVGIcon ({ name, ...rest }) {
 
     if (name === 'svelte') {
         return <Svelte { ...rest } />
+    }
+
+    if (name === 'java') {
+        return <Java { ...rest } />
+    }
+
+    if (name === 'capacitor') {
+        return <Capacitor { ...rest } />
+    }
+
+    if (name === 'typescript') {
+        return <Typescript { ...rest } />
+    }
+
+    if (name === 'git') {
+        return <Git { ...rest } />
     }
 
     return null
