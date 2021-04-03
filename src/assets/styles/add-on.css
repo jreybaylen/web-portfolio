@@ -103,12 +103,12 @@ body::-webkit-scrollbar-button {
 	fill: #478aff;
 }
 
+.remove-scroll {
+	overflow-y: hidden;
+}
+
 @media only screen and (max-width: 768px) {
 	.bg-text {
 		display: none;
 	}
-}
-
-.remove-scroll {
-	overflow-y: hidden;
 }

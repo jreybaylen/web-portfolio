@@ -4,11 +4,13 @@ const Section = Styled.section`
     position: relative;
     ${ ({ theme }) => theme.container };
     padding: ${ ({ theme }) => theme.spacing * 3 }px 0;
+
+    @media only screen and (max-width: 769px) {
+        padding: ${ ({ theme }) => theme.spacing }px 0;
+    }
 `
 
-const Label = Styled.div`
-    
-`
+const Label = Styled.div``
 
 const ItemContainerList = Styled.ul`
     display: flex;

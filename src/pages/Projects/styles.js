@@ -4,6 +4,10 @@ const Section = Styled.section`
     position: relative;
     ${ ({ theme }) => theme.container };
     padding: ${ ({ theme }) => theme.spacing * 3 }px 0;
+
+    @media only screen and (max-width: 769px) {
+        padding: ${ ({ theme }) => theme.spacing }px 0;
+    }
 `
 
 const Label = Styled.div``
@@ -13,6 +17,10 @@ const ContainerItemContainer = Styled.ul`
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
+
+    @media only screen and (max-width: 769px) {
+        margin-top: 0;
+    }
 `
 
 const ContainerItem = Styled.li`
@@ -27,6 +35,7 @@ const ContainerItem = Styled.li`
 
     @media only screen and (max-width: 768px) {
         flex: 1 0 50%;
+        margin: 0 ${ ({ theme, lastItem }) => `${ theme.spacing }px ${ lastItem ? 0 : theme.spacing }px` };
     }
 
     @media only screen and (max-width: 600px) {

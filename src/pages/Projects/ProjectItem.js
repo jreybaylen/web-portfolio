@@ -9,10 +9,10 @@ import {
 } from './styles'
 
 function ProjectItem (props) {
-    const { item, onClick } = props
+    const { item, onClick, lastItem } = props
     const hanleOpenURL = () => onClick(item.url)
     const projectItemElement = (
-        <ContainerItem onClick={ hanleOpenURL }>
+        <ContainerItem lastItem={ lastItem } onClick={ hanleOpenURL }>
             <ContainerItemGallery src={ item.gallery } />
             <ContainerItemContent>
                 <ItemContentHeading>{ item.title }</ItemContentHeading>

@@ -14,7 +14,7 @@ import {
 function Activities (props) {
     const { onShowImage } = props
     const activitiesElement = (
-        <Information>
+        <Information lastItem>
             <InformationHeading>Activities</InformationHeading>
             <InformationContent>Bonding with my family, special one and friends during free time</InformationContent>
             { activies && activies.map(

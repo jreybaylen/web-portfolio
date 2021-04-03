@@ -19,6 +19,7 @@ function Experiences () {
                                 key={ experience.key }
                                 onClick={ hanleOpenURL }
                                 position={ i % 2 === 0 ? 'left' : 'right' }
+                                lastItem={ experiences.length === (i + 1) }
                             />
                         )
                     ) }

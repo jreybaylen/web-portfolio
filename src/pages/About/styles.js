@@ -15,6 +15,10 @@ const Container = Styled.div`
     ${ ({ theme }) => theme.container };
     width: 95%;
     padding: ${ ({ theme }) => theme.spacing * 3 }px 0;
+
+    @media only screen and (max-width: 769px) {
+        padding: ${ ({ theme }) => theme.spacing }px 0;
+    }
 `
 
 const Information = Styled.div`
@@ -24,7 +28,7 @@ const Information = Styled.div`
     background-color: #fff;
     box-shadow: 0 4px 8px 0 #00000033;
     padding: ${ ({ theme }) => theme.spacing }px;
-    margin-bottom: ${ ({ theme }) => theme.spacing }px;
+    margin-bottom: ${ ({ theme, lastItem }) => lastItem ? 0 : theme.spacing }px;
 
     @media only screen and (max-width: 768px) {
         width: unset;
@@ -211,7 +215,7 @@ const ProgressBar = Styled.p`
     letter-spacing: 1.5px;
     background-color: #f83030ab;
     width: ${ ({ percent }) => percent }%;
-    padding-right: ${ ({ theme }) => theme.spacing / 2 }px;
+    padding-right: ${ ({ theme }) => theme.spacing / 5 }px;
 `
 
 const ImageViewer = Styled.div`

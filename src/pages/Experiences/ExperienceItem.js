@@ -14,11 +14,11 @@ import {
 } from './styles'
 
 function ExperienceItem(props) {
-    const { item, position, onClick } = props
+    const { item, position, onClick, ...rest } = props
     const hanleOpenURL = () => onClick(item.url)
     const jobInformationLength = item.jobInformation.length - 1
     const experienceItemElement = (
-        <ExperienceItemContainer position={ position } onClick={ hanleOpenURL }>
+        <ExperienceItemContainer lastItem={ rest.lastItem } position={ position } onClick={ hanleOpenURL }>
             <ItemContainerGalleryContainer>
                 <ItemContainerGallery src={ item.gallery } />
                 <DescriptionCompany>{ item.title }</DescriptionCompany>

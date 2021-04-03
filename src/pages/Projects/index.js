@@ -12,11 +12,12 @@ function Projects () {
             <Label className="bg-text text-left">Projects</Label>
             <ContainerItemContainer>
                 { projects && projects.map(
-                    (project) => (
+                    (project, index) => (
                         <ProjectItem
                             item={ project }
                             key={ project.key }
                             onClick={ hanleOpenURL }
+                            lastItem={ projects.length === (index + 1) }
                         />
                     )
                 ) }
