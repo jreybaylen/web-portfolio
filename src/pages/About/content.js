@@ -82,6 +82,12 @@ const skills = [
                 icon: 'react'
             },
             {
+                key: 'svelte',
+                name: 'Svelte',
+                percent: 70,
+                icon: 'svelte'
+            },
+            {
                 key: 'angular',
                 name: 'Angular',
                 percent: 50,
@@ -107,6 +113,12 @@ const skills = [
                 icon: 'node'
             },
             {
+                key: 'next',
+                name: 'Next',
+                percent: 70,
+                icon: 'next'
+            },
+            {
                 key: 'php',
                 name: 'PHP',
                 percent: 50,
@@ -122,13 +134,13 @@ const skills = [
             {
                 key: 'aws',
                 name: 'AWS',
-                percent: 60,
+                percent: 50,
                 icon: 'aws'
             },
             {
                 key: 'jenkins',
                 name: 'Jenkins',
-                percent: 30,
+                percent: 40,
                 icon: 'jenkins'
             }
         ]

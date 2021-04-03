@@ -74,7 +74,11 @@ const ItemContainerDescriptionContainer = Styled.div`
 
 const ItemContainerDescriptionInnerContainer = Styled.div`
     margin-bottom: ${ ({ theme }) => theme.spacing }px;
-    ${ ({ bottomBorder }) => bottomBorder && 'border-bottom: 2px solid #e8e8e8' };
+
+    ${ ({ lastItem }) => lastItem 
+        ? 'border-bottom: 2px solid #e8e8e8;'
+        : 'margin-bottom: 0;'
+    };
 `
 
 const DescriptionJobTitle = Styled.p`
@@ -89,6 +93,7 @@ const DescriptionDuration = Styled.p`
 
 const DescriptionJob = Styled.ul`
     padding-left: 0.9em;
+    margin-bottom: ${ ({ theme, lastItem }) => lastItem ? 0 : theme.spacing }px;
 `
 
 const DescriptionJobItem = Styled.li`

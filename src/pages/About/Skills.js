@@ -9,6 +9,7 @@ function Skills () {
     const skillsElement = (
         <Information>
             <InformationHeading>Skills</InformationHeading>
+            <InformationContent>I used these technologies to build awesome app and websites</InformationContent>
             { skills && skills.map(
                 ({ key, name, framework }) => (
                     <SkillsList key={ key }>

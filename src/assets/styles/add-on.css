@@ -83,7 +83,7 @@ body::-webkit-scrollbar-button {
 }
 
 .bg-text.text-right {
-	left: -25%;
+	left: -15%;
 	color: #fff;
 	align-items: flex-start;
 }
