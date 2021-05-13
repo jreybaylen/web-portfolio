@@ -12,6 +12,13 @@ import sktAndroidSrc2 from '../../assets/images/projects/skt-android-2-sc.png'
 
 const projects = [
     {
+        key: 'skt-mobile-dashboard',
+        title: 'SKT Mobile App Dashboard',
+        time: 'TBD',
+        url: '#',
+        gallery: ''
+    },
+    {
         key: 'skt-mobile-ios-2',
         title: 'SKT Mobile App iOS 2',
         time: 'Jun 2020 – Present',

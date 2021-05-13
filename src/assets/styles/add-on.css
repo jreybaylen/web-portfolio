@@ -77,7 +77,7 @@ body::-webkit-scrollbar-button {
 }
 
 .bg-text.text-left {
-	left: 44%;
+	left: 35%;
 	z-index: -1;
 	align-items: flex-end;
 }
@@ -85,6 +85,7 @@ body::-webkit-scrollbar-button {
 .bg-text.text-right {
 	left: -15%;
 	color: #fff;
+	pointer-events: none;
 	align-items: flex-start;
 }
 

@@ -92,10 +92,18 @@ const DescriptionJobTitle = Styled.p`
     margin-top: 0;  
     font-size: 115%;
     font-weight: 500;
+    
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+    }
 `
 
 const DescriptionDuration = Styled.p`
     line-height: 1.5;
+    
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+    }
 `
 
 const DescriptionJob = Styled.ul`
