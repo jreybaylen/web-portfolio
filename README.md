@@ -1,11 +1,11 @@
 # Web Portfolio
 
-> Know more about me
+Know more about me
 
 ## Website link
 
-> [John Rey Web Portfolio](https://jreybaylen.github.io/web-portfolio/)
+[John Rey Web Portfolio](https://jreybaylen.github.io/web-portfolio/)
 
 ## Author
 
-> Developed and design by `John Rey`
+Developed and designed by `DevTools`
